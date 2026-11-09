@@ -1,0 +1,9 @@
+project: savantenvs/yaf
+target: fuzz_router
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_router/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_router
+    libfuzzer: true
+    timeout: 30

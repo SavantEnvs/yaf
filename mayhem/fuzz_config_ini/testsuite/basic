@@ -1,0 +1,8 @@
+[prod]
+name=yaf
+sub.a=1
+sub.b=two
+list.0=x
+
+[dev:prod]
+name=dev

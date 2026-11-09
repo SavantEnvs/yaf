@@ -1,0 +1,9 @@
+project: savantenvs/yaf
+target: fuzz_dispatch
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dispatch/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_dispatch
+    libfuzzer: true
+    timeout: 30

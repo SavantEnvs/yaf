@@ -1,0 +1,6 @@
+[base]
+root=/tmp
+flag=true
+[child:base]
+flag=false
+extra=1

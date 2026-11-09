@@ -1,0 +1,10 @@
+# Keep .git (the grader needs the full history) and every source file; drop only build outputs.
+mayhem/build/
+**/*.o
+**/*.lo
+**/*.la
+**/*.so
+**/__pycache__/
+.DS_Store
+*.swp
+*~
